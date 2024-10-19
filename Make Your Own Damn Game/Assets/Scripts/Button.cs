@@ -7,6 +7,7 @@ public class Button : MonoBehaviour
 {
 
     public int points = 0;
+    public int pointIncrease;
     public Animator anim;
     public TMP_Text pointText;
     public GameObject purchaseUIBox;
@@ -17,6 +18,7 @@ public class Button : MonoBehaviour
     void Start()
     {
         purchaseUIBox.SetActive(false);
+        pointIncrease = 1;
     }
 
     // Update is called once per frame
@@ -36,7 +38,7 @@ public class Button : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             anim.SetBool("ButtonPressed", true);
-            points++;
+            points = points+ pointIncrease;
             pointText.text = points.ToString();
 
             StartCoroutine(ExecuteAfterTime(0.01f));

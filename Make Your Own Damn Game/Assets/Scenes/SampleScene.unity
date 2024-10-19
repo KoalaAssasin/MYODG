@@ -265,7 +265,6 @@ GameObject:
   m_Component:
   - component: {fileID: 55170323}
   - component: {fileID: 55170326}
-  - component: {fileID: 55170325}
   - component: {fileID: 55170324}
   m_Layer: 0
   m_Name: Purchase More Upgrades (2)
@@ -336,21 +335,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.5, y: 0.2}
   m_EdgeRadius: 0
---- !u!114 &55170325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 55170322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0bba5fd2bd69034c9aa2e7e698d7909, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button: {fileID: 2093319557}
-  unlocks: {fileID: 0}
-  UIElements: {fileID: 47567303}
 --- !u!212 &55170326
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -416,8 +400,8 @@ GameObject:
   m_Component:
   - component: {fileID: 168300762}
   - component: {fileID: 168300765}
-  - component: {fileID: 168300764}
   - component: {fileID: 168300763}
+  - component: {fileID: 168300766}
   m_Layer: 0
   m_Name: Purchase Click Up (1)
   m_TagString: Untagged
@@ -487,21 +471,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.5, y: 0.2}
   m_EdgeRadius: 0
---- !u!114 &168300764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 168300761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0bba5fd2bd69034c9aa2e7e698d7909, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button: {fileID: 2093319557}
-  unlocks: {fileID: 0}
-  UIElements: {fileID: 47567303}
 --- !u!212 &168300765
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -557,6 +526,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &168300766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168300761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f2b967356948ae44952921ee9ce6175, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 2093319557}
 --- !u!1 &417227725
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,7 +596,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Click Upgrade:
+  m_text: 'Upgrade Clicks:
 
     30'
   m_isRightToLeft: 0
@@ -844,9 +826,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Click Upgrade:
+  m_text: 'Unlock more:
 
-    30'
+    120'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e082a5ce75f2f4747ad0f21986e926dc, type: 2}
   m_sharedMaterial: {fileID: 7685219464327841244, guid: e082a5ce75f2f4747ad0f21986e926dc, type: 2}
@@ -982,9 +964,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Click Upgrade:
-
-    30'
+  m_text: 'Upgrade Auto Clicks: 60'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e082a5ce75f2f4747ad0f21986e926dc, type: 2}
   m_sharedMaterial: {fileID: 7685219464327841244, guid: e082a5ce75f2f4747ad0f21986e926dc, type: 2}
@@ -1536,8 +1516,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1629751042}
   - component: {fileID: 1629751045}
-  - component: {fileID: 1629751044}
   - component: {fileID: 1629751043}
+  - component: {fileID: 1629751046}
   m_Layer: 0
   m_Name: Purchase Autoclick (1)
   m_TagString: Untagged
@@ -1607,21 +1587,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.5, y: 0.2}
   m_EdgeRadius: 0
---- !u!114 &1629751044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1629751041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0bba5fd2bd69034c9aa2e7e698d7909, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button: {fileID: 2093319557}
-  unlocks: {fileID: 0}
-  UIElements: {fileID: 47567303}
 --- !u!212 &1629751045
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1677,6 +1642,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1629751046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629751041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e66e49fd6a7f1b842a1bce1f0a444fb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 2093319557}
+  autoClicks: {fileID: 2093319563}
 --- !u!1 &1939580422
 GameObject:
   m_ObjectHideFlags: 0
@@ -1911,6 +1890,7 @@ GameObject:
   - component: {fileID: 2093319559}
   - component: {fileID: 2093319558}
   - component: {fileID: 2093319557}
+  - component: {fileID: 2093319563}
   - component: {fileID: 2093319562}
   - component: {fileID: 2093319560}
   - component: {fileID: 2093319561}
@@ -1934,6 +1914,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 0
+  pointIncrease: 0
   anim: {fileID: 2093319561}
   pointText: {fileID: 1939580424}
   purchaseUIBox: {fileID: 1494622623}
@@ -2081,6 +2062,22 @@ MonoBehaviour:
   ClickUp1: {fileID: 168300761}
   AutoUp1: {fileID: 1629751041}
   MoreButtons1: {fileID: 55170322}
+--- !u!114 &2093319563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093319556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b44a59d09fb359944a68cb3374b2417e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AutoclickTimer: 0
+  AutoclickTimer_Thresh: 3
+  AutoclickAmount: 0
+  button: {fileID: 2093319557}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
